@@ -34,13 +34,17 @@ class Header {
           return `
           <div id="container">
           <h1 id="header_container">${this.header}</h1>
-          <img src="images/me.jpg">
-          
           </div>
+          <div id="container_img_presentation">
+          <img src="images/me.jpg">
+          <p id="presentation">My name is Mandrut Mirel, i am 25 years old and i live in Cluj-Napoca, Romania.</p>
+          </div>
+          
           `
       }
   }
 
   header = new Presentation('Hello')
+
 
   document.getElementById('section_presentation').innerHTML = header.showContainerPresentation()
